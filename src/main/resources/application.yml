@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: webshop-api
+  datasource:
+    url: jdbc:mariadb://localhost:3306/tietokannat
+    username: ${DB_USER:webshop_app}
+    password: ${DB_PASSWORD:Webshop_App_2026}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+  web:
+    error:
+      include-message: always
+
+server:
+  port: 8080
