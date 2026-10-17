@@ -231,11 +231,3 @@ Sovellus käyttää omaa käyttäjää `webshop_app`:
 * ei DELETE HISTORY oikeutta, joten versioitujen taulujen historiaa ei voi poistaa
 
 Kaikki kyselyt käyttävät parametreja, joten SQL injektio ei ole mahdollinen. Syötteet tarkistetaan ennen tallennusta. Salasana luetaan ympäristömuuttujasta `DB_PASSWORD`.
-
-
-## Käynnistys
-
-```
-mariadb -u root -p tietokannat < db/webshop.sql
-mvn spring-boot:run
-```
